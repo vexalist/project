@@ -1,0 +1,13 @@
+$susy: (
+  columns: 24,
+  gutters: 1/3,
+  math: fluid,
+  output: float,
+  gutter-position: before,
+  global-box-sizing: border-box,
+  use-custom: (rem: true)
+);
+
+$headline: 'Oswald', Helvetica, sans;
+$body: 'PT Mono', Verdana, sans;
+$black: #222;
