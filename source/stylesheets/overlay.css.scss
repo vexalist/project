@@ -5,24 +5,24 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(153,204,51,0.9);
+	background: $black;
+	z-index: 999;
 }
 
-/* Overlay closing cross */
-.overlay .overlay-close {
-	width: 80px;
-	height: 80px;
+.overlay-close {
 	position: absolute;
-	right: 20px;
-	top: 20px;
-	overflow: hidden;
-	// border: none;
-	// background: url(../img/cross.png) no-repeat center center;
-	background: red;
-	text-indent: 200%;
-	color: transparent;
-	outline: none;
+	background: none;
+	border: none;
+	right: 0;
+	top: 0;
+	padding: 15px;
 	z-index: 100;
+	span {
+		color: $white;
+		@extend .fa;
+		@extend .fa-times;
+		@extend .fa-2x;
+	}
 }
 
 /* Menu style */
@@ -48,23 +48,28 @@
 	display: block;
 	height: 20%;
 	height: calc(100% / 5);
-	min-height: 54px;
+	min-height: 90px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
 .overlay ul li a {
-	font-size: 54px;
+	font-size: 30px;
 	font-weight: 300;
+	text-transform: uppercase;
 	display: block;
-	color: #fff;
+	color: $white;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+	text-decoration: none;
+	padding: 10px 0;
+	border-bottom: 2px solid $white;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #e3fcb1;
+	color: blue;
+	border-bottom: 2px solid blue;
 }
 
 /* Effects */

@@ -10,8 +10,14 @@
 }
 
 .project-image {
+	@include span(first 22 of 24);
+	@include pre(1);
+	text-align: center;
+	z-index: 10;
+	
 	img {
-		@include span(first 22 of 24);
-		@include pre(1);
+		width: 100%;
+		max-width: 1084px;
+		margin-bottom: 60px;
 	}
 }

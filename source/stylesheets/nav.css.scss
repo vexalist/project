@@ -1,9 +1,7 @@
 nav {
 	width: 100%;
-	padding: 20px;
 	position: absolute;
 	top: 0;
-	z-index: 10;
 }
 
 .menu {
@@ -11,5 +9,7 @@ nav {
 	span {
 		@extend .fa;
 		@extend .fa-bars;
+		padding: 20px;
+		cursor: pointer;
 	}
 }

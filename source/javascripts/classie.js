@@ -10,7 +10,6 @@
 
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
-alert("hi");
 
 ( function( window ) {
 

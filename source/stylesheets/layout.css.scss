@@ -55,7 +55,7 @@ p {
 
 .outer {
   display: table;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
 }
@@ -67,7 +67,40 @@ p {
 
 .inner {
 	@include container(1280px);
-	padding: 3em;
   margin-left: auto;
   margin-right: auto; 
+  &#intro {
+  	padding: 2em;
+  }
 }
+
+.previous,
+.next {
+	padding: 10px;
+	display: inline-block;
+	background-color: #fff;
+	border-bottom: 2px solid $black;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	margin: 15px;
+	font-size: 13px;
+	span {
+		@extend .fa;
+	}
+}
+
+.next {
+	right: 0;
+	text-align: right;
+	span {
+		@extend .fa-long-arrow-right;
+	}
+}
+
+.previous {
+	span {
+		@extend .fa-long-arrow-left;
+	}
+}
+
