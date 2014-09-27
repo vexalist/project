@@ -32,7 +32,7 @@ h2 {
 
 p {
 	margin-top: 20px;
-	line-height: 1.5em;
+	line-height: 2em;
 }
 
 .button {
@@ -51,6 +51,9 @@ p {
 
 .container {
 	@include container(1024px);
+	&#about {
+		@include container(700px);
+	}
 }
 
 .outer {
@@ -70,6 +73,6 @@ p {
   margin-left: auto;
   margin-right: auto; 
   &#intro {
-  	padding: 2em;
+  	padding: 3em;
   }
 }

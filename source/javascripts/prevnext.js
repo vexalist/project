@@ -1,4 +1,4 @@
-var pageList = ["index.html", "01.html", "02.html", "03.html"];
+var pageList = ["index.html", "01.html", "02.html", "about.html"];
 var url = window.location.pathname;
 
 document.getElementById('next').onclick = function(){
