@@ -12,6 +12,11 @@
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		support = { transitions : Modernizr.csstransitions };
 
+		body = $('body'),
+		toggleModal = function() {
+			body.toggleClass('body-locked');
+		}
+
 	function toggleOverlay() {
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
@@ -36,5 +41,8 @@
 	}
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
+	triggerBttn.addEventListener( 'click', toggleModal );
+	
 	closeBttn.addEventListener( 'click', toggleOverlay );
+	closeBttn.addEventListener( 'click', toggleModal );
 })();
